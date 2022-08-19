@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script+Swash+Caps&display=swap" rel="stylesheet">
+    <title>Dia 3</title>
+    <style>
+        html {
+            overflow: hidden;
+            font-family: 'Oleo Script Swash Caps', cursive;
+        }
+
+        .container-botao {
+            margin: 10% auto;
+            display: flex;
+            justify-content: center;
+        }
+
+        span {
+            z-index: 2;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+        span:hover {
+            background-color: rgb(50, 50, 50);
+        }
+
+        #botao {
+            transition: .5s;
+            display: flex;
+        }
+
+        .div-botao {
+            border: 6px solid grey;
+            background-color: rgb(235, 235, 235);
+            border-radius: 55px;
+            width: 200px;
+        }
+
+        .margin {
+            transition: .5s;
+            margin-left: 100px;
+        }
+
+        .fundo {
+            position: absolute;
+            width: 100%;
+            top: -30px;
+            left: 0;
+        }
+
+        .fundo img {
+            height: 104vh;
+            z-index: -1;
+            width: 100vw;
+            position: absolute;
+            left: 0;
+            -webkit-transition: opacity .5s ease-in-out;
+            -moz-transition: opacity .5s ease-in-out;
+            -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+        }
+
+        .fundo img.transparent {
+            opacity: 0;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+            font-size: 90px;
+            background: -webkit-linear-gradient(60deg, #001f46, #114d97b0, white);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            transition: .5s;
+            margin-top: -100px;
+        }
+
+        h1.transparent {
+            opacity: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="fundo">
+        <img class="bottom" src="fundo-preto.png" />
+        <img class="top transparent" src="fundo-mundo.jpg" />
+    </div>
+
+    <div class="container-botao">
+
+        <div class="div-botao">
+            <span id="botao"></span>
+        </div>
+
+    </div>
+
+    <h1 class="hello transparent">Hello World !</h1>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script>
+
+    $(document).ready(function () {
+
+        botao = document.getElementById('botao');
+
+        botao.addEventListener('click', function () {
+
+            if (botao.classList.contains('margin')) {
+                botao.classList.remove("margin");
+                $(".fundo img.top").toggleClass("transparent");
+                $(".hello").toggleClass("transparent");
+            } else {
+                botao.classList.add("margin");
+                $(".fundo img.top").toggleClass("transparent");
+                $(".hello").toggleClass("transparent");
+            }
+        });
+    });
+</script>
+
+</html>
