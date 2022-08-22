@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>Dia 6</title>
+    <style>
+        html {
+            background-image: url('https://i.pinimg.com/originals/f6/4c/59/f64c59febd4dca0c078b8f7b3e0a4553.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            margin: 12% auto;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            width: 20%;
+        }
+
+        .card {
+            margin: 40px 30px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.18);
+            transform: scale(2);
+            padding: 20px;
+        }
+
+        .card:hover {
+            filter: invert(100%);
+            box-shadow: 0 8px 32px 0 rgba(0,0,0,.2);
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <span>
+                <i class="fas fa-user"></i>
+            </span>
+        </div>
+        <div class="card">
+            <span>
+                <i class="fas fa-user-graduate"></i>
+            </span>
+        </div>
+        <div class="card">
+            <span>
+                <i class="fas fa-user-astronaut"></i>
+            </span>
+        </div>
+        <div class="card">
+            <span>
+                <i class="fas fa-user-secret"></i>
+            </span>
+        </div>
+    </div>
+</body>
+
+</html>
