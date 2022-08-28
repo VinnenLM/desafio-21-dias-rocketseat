@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia 11</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        html {
+            background-image: url('https://www.wasd.pt/wp-content/uploads/2019/11/black-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+
+        }
+
+        .container-principal {
+            width: 60%;
+            margin: 0 auto;
+            font-size: 30px;
+        }
+
+        .titulo {
+            text-align: center;
+            margin-top: 5rem;
+        }
+
+        h1 {
+            color: #ff0000c4;
+            font-weight: bold;
+            font-size: 60px;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        .formulario {
+            display: flex;
+            flex-direction: column;
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(2px);
+            -webkit-backdrop-filter: blur(2px);
+            box-shadow: 0 1px 32px 0 rgba(255, 255, 255, .5);
+            padding: 20px;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 30px;
+            margin-top: 10px;
+            margin-bottom: 0;
+            text-shadow: 1px 1px 1px black;
+        }
+
+        input {
+            font-size: 30px;
+            border-radius: 5px;
+            padding: 5px;
+            font-family: 'Bebas Neue', cursive;
+            border-style: hidden;
+            outline: none;
+            box-shadow: 2px 2px 2px black;
+        }
+
+        #emailInvalido {
+            color: #ff0000c4;
+            font-size: 12px;
+            display: block;
+        }
+
+        .naoMostrar {
+            display: none !important;
+        }
+
+        .botao {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        button {
+            font-size: 30px;
+            margin-top: 5px;
+            background-color: #ff0000c4;
+            width: 35%;
+            color: white;
+            font-family: 'Bebas Neue', cursive;
+            border: 0;
+            box-shadow: 2px 3px 2px black;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #751515;
+            cursor: pointer;
+        }
+
+        #emailInvalido {
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="container-principal">
+
+            <div class="titulo">
+                <h1>Login</h1>
+            </div>
+
+            <div class="container-principal">
+
+                <div class="formulario">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" id="email" placeholder="Insira o seu e-mail">
+                    <span id="emailInvalido" class="naoMostrar">E-mail inválido</span>
+                    <label for="senha">Senha</label>
+                    <input class="form-control" type="password" id="senha" placeholder="******">
+                    <div class="botao">
+                        <button id="entrar" class="btn mt-3">Entrar</button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+
+        var entrar = document.getElementById('entrar');
+        var email = document.getElementById('email');
+
+        entrar.addEventListener('click', function () {
+            var email = document.getElementById('email').value;
+            var emailErrado = document.getElementById('emailInvalido');
+            var senha = document.getElementById('senha').value;
+            var validacao = validarEmail(email);
+            if (validacao == true) {
+                emailErrado.classList.add("naoMostrar");
+                if (senha == '') {
+                    alert('Preencha o campo de senha!');
+                } else {
+                    alert('Logado com sucesso!');
+                }
+            } else {
+                emailErrado.classList.remove("naoMostrar");
+            }
+        });
+
+        email.addEventListener('keydown', function () {
+            var emailErrado = document.getElementById('emailInvalido');
+            emailErrado.classList.add("naoMostrar");
+        })
+
+        function validarEmail(email) {
+            var validar = /\S+@\S+\.\S+/;
+            return validar.test(email);
+        }
+
+    </script>
+
+</body>
+
+</html>
