@@ -18,7 +18,8 @@ $router->get('/', function(){
 });
 
 $router->get('/dia2', function() use ($router){
-    return $router->app->version();
+    //return $router->app->version();
+    return view('Dia2/index');
 });
 
 $router->get('/dia3', function(){
