@@ -11,7 +11,7 @@
 |
 */
 
-$app = require __DIR__.'/../bootstrap/app.php';
+$app = require __DIR__ . '/../bootstrap/app.php';
 
 /*
 |--------------------------------------------------------------------------
@@ -25,10 +25,4 @@ $app = require __DIR__.'/../bootstrap/app.php';
 |
 */
 
-try {
-    $app->run();
-} catch(\Exception $e) {
-    echo "<pre>";
-    echo $e;
-    echo "</pre>";
-}
+$app->run();
