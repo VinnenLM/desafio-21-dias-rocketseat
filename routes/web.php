@@ -23,73 +23,73 @@ $router->get('/dia2', function() use ($router){
 });
 
 $router->get('/dia3', function(){
-    return view('dia3/index');
+    return view('Dia3/index');
 });
 
 $router->get('/dia4', function(){
-    return view('dia4/index');
+    return view('Dia4/index');
 });
 
 $router->get('/dia5', function(){
-    return view('dia5/index');
+    return view('Dia5/index');
 });
 
 $router->get('/dia6', function(){
-    return view('dia6/index');
+    return view('Dia6/index');
 });
 
 $router->get('/dia7', function(){
-    return view('dia7/index');
+    return view('Dia7/index');
 });
 
 $router->get('/dia8', function(){
-    return view('dia8/index');
+    return view('Dia8/index');
 });
 
 $router->get('/dia9', function(){
-    return view('dia9/index');
+    return view('Dia9/index');
 });
 
 $router->get('/dia10', function(){
-    return view('dia10/index');
+    return view('Dia10/index');
 });
 
 $router->get('/dia11', function(){
-    return view('dia11/index');
+    return view('Dia11/index');
 });
 
 $router->get('/dia12', function(){
-    return view('dia12/index');
+    return view('Dia12/index');
 });
 
 $router->get('/dia13', function(){
-    return view('dia13/index');
+    return view('Dia13/index');
 });
 
 $router->get('/dia14', function(){
-    return view('dia14/index');
+    return view('Dia14/index');
 });
 
 $router->get('/dia15', function(){
-    return view('dia15/index');
+    return view('Dia15/index');
 });
 
 $router->get('/dia16', function(){
-    return view('dia16/index');
+    return view('Dia16/index');
 });
 
 $router->get('/dia17', function(){
-    return view('dia17/index');
+    return view('Dia17/index');
 });
 
 $router->get('/dia18', function(){
-    return view('dia18/index');
+    return view('Dia18/index');
 });
 
 $router->get('/dia19', function(){
-    return view('dia19/index');
+    return view('Dia19/index');
 });
 
 $router->get('/dia20', function(){
-    return view('dia20/index');
+    return view('Dia20/index');
 });
