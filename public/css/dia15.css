@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(50, 50, 50, .1);
+    font-family: 'Mukta', sans-serif;
+}
+
+header {
+    background-color: #3483fa;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 50px;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.header-inicio {
+    display: flex;
+    justify-content: start;
+}
+
+.header-meio {
+    display: flex;
+    justify-content: center;
+}
+
+.header-fim {
+    display: flex;
+    justify-content: end;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns: repeat(3, 33.3%);
+    width: 100%;
+    margin: 0 160px;
+}
+
+.input-group {
+    border: 1px solid black !important;
+    border-radius: 5px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.carrinho {
+    font-size: 20px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.container-produtos {
+    margin: 0 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.produto {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    background-color: white;
+}
+
+.produto img {
+    max-width: 35%;
+    margin: 0 auto;
+}
+
+.produto-imagem {
+    display: flex;
+    padding: 10px;
+}
+
+.produto-descricao {
+    position: relative;
+    padding: 10px;
+    border-top: 1px solid black;
+    height: 120px;
+}
+
+.produto-descricao span {
+    display: block;
+}
+
+.valor {
+    position: absolute;
+    font-size: 25px;
+    padding-top: 15px;
+    left: 5%;
+    bottom: 5%;
+}
+
+.produto:hover {
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 5px 5px 15px 1px rgba(50, 50, 50, .5);
+}
+
+.categorias {
+    padding: 10px;
+    margin: 0 200px 50px 200px;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    position: relative
+}
+
+.produto-imagem {
+    position: relative;
+}
+
+.favoritar {
+    position: absolute;
+    font-size: 30px;
+    right: 5%;
+}
+
+.favoritar:hover {
+    transition: .2s;
+    transform: scale(1.2);
+}
+
+.categoria {
+    display: flex;
+    flex-direction: column;
+    margin: 1px;
+    padding: 10px;
+    background-color: white;
+    text-align: center;
+}
+
+.categoria i {
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+
+.categoria:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #3483fa;
+}
+
+.categoria img {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.sub-titulo {
+    margin-left: 210px;
+    font-size: 25px;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #3483fa;
+    ;
+    height: 100px;
+    width: 100%;
+    margin-top: 50px;
+    border-top: 1px solid black;
+}

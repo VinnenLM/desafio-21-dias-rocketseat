@@ -1,0 +1,79 @@
+html {
+    overflow: hidden;
+    font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.container-botao {
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+}
+
+span {
+    z-index: 2;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+span:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+#botao {
+    transition: .5s;
+    display: flex;
+}
+
+.div-botao {
+    border: 6px solid grey;
+    background-color: rgb(235, 235, 235);
+    border-radius: 55px;
+    width: 200px;
+}
+
+.margin {
+    transition: .5s;
+    margin-left: 100px;
+}
+
+.fundo {
+    position: absolute;
+    width: 100%;
+    top: -30px;
+    left: 0;
+}
+
+.fundo img {
+    height: 104vh;
+    z-index: -1;
+    width: 100vw;
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity .5s ease-in-out;
+    -moz-transition: opacity .5s ease-in-out;
+    -o-transition: opacity .5s ease-in-out;
+    transition: opacity .5s ease-in-out;
+}
+
+.fundo img.transparent {
+    opacity: 0;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 90px;
+    background: -webkit-linear-gradient(60deg, #001f46, #114d97b0, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .5s;
+    margin-top: -100px;
+}
+
+h1.transparent {
+    opacity: 0;
+}

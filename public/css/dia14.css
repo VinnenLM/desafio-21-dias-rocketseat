@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+html {
+    background-image: url('/imgs/quiz.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.quiz {
+    color: black;
+    background: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+.quiz-respostas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.quiz-respostas span {
+    background-color: rgba(70, 70, 70);
+    color: white;
+    margin-bottom: 10px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+
+.quiz-respostas span:hover {
+    cursor: pointer;
+}
+
+p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container-geral {
+    text-align: center;
+}
+
+.botao {
+    margin-top: 50px;
+}
+
+.botao button {
+    font-family: 'Work Sans', sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(23, 197, 23);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px 1px black;
+}
+
+button:hover {
+    background-color: rgb(18, 154, 18);
+    cursor: pointer;
+}

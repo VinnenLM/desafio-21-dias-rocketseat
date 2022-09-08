@@ -1,0 +1,87 @@
+html {
+    overflow: hidden;
+    font-family: 'Carter One', cursive;
+}
+
+body {
+    background-color: white;
+    transition: 1s;
+}
+
+.container-botao {
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+}
+
+i {
+    filter: invert(100%);
+    transform: scale(2.5);
+    transition: 1s;
+    margin-top: 41px;
+    margin-left: 41px;
+    position: absolute;
+}
+
+.botao {
+    transition: 1s;
+    display: flex;
+    z-index: 2;
+    height: 95px;
+    width: 100px;
+    background-color: black;
+    border-radius: 57px;
+    position: relative;
+    margin-left: -1px;
+}
+
+.botao:hover {
+    cursor: pointer;
+}
+
+.transicao-sol {
+    transform: rotate(180deg) scale(2.5);
+    transition: 1s;
+}
+
+.transicao-lua {
+    transform: rotate(-180deg) scale(2.5);
+    transition: 1s;
+}
+
+.div-botao {
+    border: 5px solid grey;
+    background-color: rgb(235, 235, 235);
+    border-radius: 55px;
+    width: 200px;
+}
+
+.div-botao:hover {
+    border: 5px solid rgb(77, 77, 77);
+    background-color: rgb(215, 215, 215);
+}
+
+.margin {
+    transition: 1s;
+    margin-left: 101px;
+}
+
+.fundo-escuro {
+    background-color: black;
+}
+
+h1 {
+    color: black;
+    text-align: center;
+    font-size: 90px;
+    transition: 1s;
+    margin-top: -100px;
+}
+
+.cor {
+    color: white;
+}
+
+.transparente {
+    opacity: 0;
+}

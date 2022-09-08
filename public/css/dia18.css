@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+        html {
+            background-image: url('/imgs/blue-background.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 0;
+            margin: 0;
+            font-family: 'Open Sans', sans-serif;
+            overflow: hidden;
+        }
+
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(255, 255, 255, .5);
+            backdrop-filter: blur(15px);
+            padding: 10px;
+            width: 50%;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 3px 3px 5px 3px black;
+        }
+
+        .campo {
+            width: 50%;
+            background-color: white;
+            height: 50px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 0 auto 20px auto;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            font-size: 30px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            max-width: 30ch;
+            overflow: hidden;
+        }
+
+        .opcoes {
+            display: flex;
+            justify-content: space-around;
+            width: 50%;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        button {
+            font-family: 'Open Sans', sans-serif;
+            padding: 10px;
+            color: white;
+            text-shadow: 1px 1px 1px black;
+            font-size: 20px;
+            border-radius: 15px;
+            border: 2px solid rgb(14, 14, 128);
+            background-image: linear-gradient(180deg, #007aff, #0063ce)
+        }
+
+        button:hover {
+            cursor: pointer;
+            background-image: linear-gradient(180deg, #0568d3, #092f57)
+        }
+
+        .input {
+            text-align: center;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            padding: 20;
+            width: 30%;
+        }

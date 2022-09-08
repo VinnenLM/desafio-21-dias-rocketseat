@@ -1,0 +1,74 @@
+html {
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.container {
+    margin: 10% auto;
+    display: flex;
+    justify-content: center;
+    width: 20%;
+}
+
+.geral {
+    width: 100%;
+}
+
+.loading {
+    box-shadow: 0 0px 10px 5px white;
+    background-color: black;
+    border: 1px solid black;
+    position: relative;
+}
+
+#loading-bar {
+    color: #000;
+    background-color: white;
+    width: 0;
+    height: 20px;
+    padding-bottom: 5px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+.tamanho {
+    transition: 3s;
+    width: 100% !important;
+}
+
+.botao {
+    width: 100%;
+    text-align: center;
+}
+
+span {
+    position: absolute;
+    color: white;
+    top: 10%;
+    left: 41%;
+}
+
+#porcentagem {
+    color: white;
+    left: 54%;
+}
+
+.escuro {
+    color: black !important;
+}
+
+button {
+    font-family: 'Orbitron', sans-serif;
+    padding: 5px;
+    transform: scale(1.5);
+}
+
+button:hover {
+    cursor: pointer;
+}
