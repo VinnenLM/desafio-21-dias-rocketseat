@@ -17,7 +17,7 @@ $router->get('/', function(){
     return view('home/index');
 });
 
-$router->get('/dia2', function(){
+$router->get('/dia2', function() use ($router){
     return view('dia2/index');
 });
 
