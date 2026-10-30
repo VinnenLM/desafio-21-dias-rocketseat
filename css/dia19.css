@@ -21,6 +21,7 @@ body {
 
 
 .galeria {
+    position: relative;
     margin: 4% auto;
     width: 500px;
     height: 500px;
@@ -28,6 +29,40 @@ body {
     border: 1px solid black;
     box-shadow: 2px 2px 2px 2px black;
     background-color: black;
+}
+
+.loading {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-radius: 5%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 28px;
+}
+
+.loading[hidden] {
+    display: none;
+}
+
+.spinner {
+    width: 56px;
+    height: 56px;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-top-color: white;
+    border-radius: 50%;
+    animation: girar 1s linear infinite;
+}
+
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .imagem {
@@ -61,4 +96,9 @@ button {
 button:hover {
     background-color: #0b1b64c2;
     cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
 }
